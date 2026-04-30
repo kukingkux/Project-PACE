@@ -5,66 +5,30 @@
             <LINE>no service timestamps debug datetime msec</LINE>
             <LINE>no service password-encryption</LINE>
             <LINE>!</LINE>
-            <LINE>hostname Router</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>hostname Router0</LINE>
             <LINE>!</LINE>
             <LINE>no ip cef</LINE>
             <LINE>no ipv6 cef</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>interface FastEthernet0/0</LINE>
-            <LINE> description Server LAN</LINE>
             <LINE> ip address 192.168.10.1 255.255.255.0</LINE>
-            <LINE> ip helper-address 192.168.10.2</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet1/0</LINE>
-            <LINE> description WAN to Router2</LINE>
-            <LINE> ip address 152.10.2.1 255.255.255.252</LINE>
-            <LINE> ip helper-address 192.168.10.2</LINE>
+            <LINE> ip address 172.16.0.1 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet2/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 10.0.1.1 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>ip classless</LINE>
-            <LINE>!</LINE>
-            <LINE>ip flow-export version 9</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>ip route 192.168.20.0 255.255.255.0 172.16.0.2</LINE>
+            <LINE>ip route 192.168.30.0 255.255.255.0 10.0.1.2</LINE>
+            <LINE>ip route 10.0.2.0 255.255.255.252 172.16.0.2</LINE>
             <LINE>!</LINE>
             <LINE>line con 0</LINE>
             <LINE>!</LINE>
@@ -72,8 +36,6 @@
             <LINE>!</LINE>
             <LINE>line vty 0 4</LINE>
             <LINE> login</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>!</LINE>
             <LINE>end</LINE>
           </RUNNINGCONFIG>

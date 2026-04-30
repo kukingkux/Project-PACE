@@ -39,11 +39,11 @@
                   <COVERAGERANGE>0</COVERAGERANGE>
                   <SAVED_FULLDUPLEX>false</SAVED_FULLDUPLEX>
                   <UP_METHOD>1</UP_METHOD>
-                  <IP />
-                  <SUBNET />
-                  <PORT_GATEWAY />
-                  <PORT_DNS>192.168.10.3</PORT_DNS>
-                  <PORT_DHCP_ENABLE>true</PORT_DHCP_ENABLE>
+                  <IP>192.168.10.3</IP>
+                  <SUBNET>255.255.255.0</SUBNET>
+                  <PORT_GATEWAY>192.168.10.1</PORT_GATEWAY>
+                  <PORT_DNS>192.168.10.2</PORT_DNS>
+                  <PORT_DHCP_ENABLE>false</PORT_DHCP_ENABLE>
                   <ND_SUPPRESSED>false</ND_SUPPRESSED>
                   <ND_IPV6_DNS_ADDRESSES />
                   <PC_FIREWALL>false</PC_FIREWALL>
@@ -89,9 +89,9 @@
           <IGNORED_VERSION />
           <SYS_NAME>PC</SYS_NAME>
           <PTP_ENALBED>0</PTP_ENALBED>
-          <GATEWAY />
+          <GATEWAY>192.168.10.1</GATEWAY>
           <DNS_CLIENT>
-            <SERVER_IP>192.168.10.3</SERVER_IP>
+            <SERVER_IP>192.168.10.2</SERVER_IP>
             <SERVER_IPV6 />
           </DNS_CLIENT>
           <EMAIL_CLIENT>
