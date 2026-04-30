@@ -1,0 +1,47 @@
+ <RUNNINGCONFIG>
+            <LINE>!</LINE>
+            <LINE>version 12.1</LINE>
+            <LINE>no service timestamps log datetime msec</LINE>
+            <LINE>no service timestamps debug datetime msec</LINE>
+            <LINE>no service password-encryption</LINE>
+            <LINE>!</LINE>
+            <LINE>hostname Switch</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>ptp clock transparent domain 0 profile default</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>spanning-tree mode pvst</LINE>
+            <LINE>spanning-tree extend system-id</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet0/1</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet1/1</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet2/1</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet3/1</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet4/1</LINE>
+            <LINE>!</LINE>
+            <LINE>interface Vlan1</LINE>
+            <LINE> no ip address</LINE>
+            <LINE> shutdown</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>line con 0</LINE>
+            <LINE>!</LINE>
+            <LINE>line vty 0 4</LINE>
+            <LINE> login</LINE>
+            <LINE>line vty 5 15</LINE>
+            <LINE> login</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>end</LINE>
+          </RUNNINGCONFIG>

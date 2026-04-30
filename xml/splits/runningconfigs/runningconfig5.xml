@@ -1,0 +1,80 @@
+<RUNNINGCONFIG>
+            <LINE>!</LINE>
+            <LINE>version 12.2</LINE>
+            <LINE>no service timestamps log datetime msec</LINE>
+            <LINE>no service timestamps debug datetime msec</LINE>
+            <LINE>no service password-encryption</LINE>
+            <LINE>!</LINE>
+            <LINE>hostname Router</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>no ip cef</LINE>
+            <LINE>no ipv6 cef</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet0/0</LINE>
+            <LINE> no ip address</LINE>
+            <LINE> duplex auto</LINE>
+            <LINE> speed auto</LINE>
+            <LINE> shutdown</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet1/0</LINE>
+            <LINE> no ip address</LINE>
+            <LINE> duplex auto</LINE>
+            <LINE> speed auto</LINE>
+            <LINE> shutdown</LINE>
+            <LINE>!</LINE>
+            <LINE>interface FastEthernet2/0</LINE>
+            <LINE> no ip address</LINE>
+            <LINE> duplex auto</LINE>
+            <LINE> speed auto</LINE>
+            <LINE> shutdown</LINE>
+            <LINE>!</LINE>
+            <LINE>router rip</LINE>
+            <LINE>!</LINE>
+            <LINE>ip classless</LINE>
+            <LINE>!</LINE>
+            <LINE>ip flow-export version 9</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>line con 0</LINE>
+            <LINE>!</LINE>
+            <LINE>line aux 0</LINE>
+            <LINE>!</LINE>
+            <LINE>line vty 0 4</LINE>
+            <LINE> login</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>!</LINE>
+            <LINE>end</LINE>
+          </RUNNINGCONFIG>
