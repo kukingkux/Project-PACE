@@ -105,11 +105,11 @@
                   <COVERAGERANGE>0</COVERAGERANGE>
                   <SAVED_FULLDUPLEX>false</SAVED_FULLDUPLEX>
                   <UP_METHOD>1</UP_METHOD>
-                  <IP />
-                  <SUBNET />
-                  <PORT_GATEWAY />
-                  <PORT_DNS>192.168.10.3</PORT_DNS>
-                  <PORT_DHCP_ENABLE>true</PORT_DHCP_ENABLE>
+                  <IP>192.168.10.3</IP>
+                  <SUBNET>255.255.255.0</SUBNET>
+                  <PORT_GATEWAY>192.168.10.1</PORT_GATEWAY>
+                  <PORT_DNS>192.168.10.2</PORT_DNS>
+                  <PORT_DHCP_ENABLE>false</PORT_DHCP_ENABLE>
                   <ND_SUPPRESSED>false</ND_SUPPRESSED>
                   <ND_IPV6_DNS_ADDRESSES />
                   <PC_FIREWALL>false</PC_FIREWALL>
@@ -155,9 +155,9 @@
           <IGNORED_VERSION />
           <SYS_NAME>PC</SYS_NAME>
           <PTP_ENALBED>0</PTP_ENALBED>
-          <GATEWAY />
+          <GATEWAY>192.168.10.1</GATEWAY>
           <DNS_CLIENT>
-            <SERVER_IP>192.168.10.3</SERVER_IP>
+            <SERVER_IP>192.168.10.2</SERVER_IP>
             <SERVER_IPV6 />
           </DNS_CLIENT>
           <EMAIL_CLIENT>
@@ -1670,11 +1670,11 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
                   <COVERAGERANGE>0</COVERAGERANGE>
                   <SAVED_FULLDUPLEX>false</SAVED_FULLDUPLEX>
                   <UP_METHOD>1</UP_METHOD>
-                  <IP />
-                  <SUBNET />
-                  <PORT_GATEWAY />
-                  <PORT_DNS>192.168.10.3</PORT_DNS>
-                  <PORT_DHCP_ENABLE>true</PORT_DHCP_ENABLE>
+                  <IP>192.168.10.2</IP>
+                  <SUBNET>255.255.255.0</SUBNET>
+                  <PORT_GATEWAY>192.168.10.1</PORT_GATEWAY>
+                  <PORT_DNS>192.168.10.2</PORT_DNS>
+                  <PORT_DHCP_ENABLE>false</PORT_DHCP_ENABLE>
                   <ND_SUPPRESSED>false</ND_SUPPRESSED>
                   <ND_IPV6_DNS_ADDRESSES />
                   <PC_FIREWALL>false</PC_FIREWALL>
@@ -1722,7 +1722,7 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
           <PTP_ENALBED>0</PTP_ENALBED>
           <GATEWAY>192.168.10.1</GATEWAY>
           <DNS_CLIENT>
-            <SERVER_IP>192.168.10.3</SERVER_IP>
+            <SERVER_IP>192.168.10.2</SERVER_IP>
             <SERVER_IPV6 />
           </DNS_CLIENT>
           <EMAIL_CLIENT>
@@ -3097,13 +3097,7 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
           <DNS_SERVER>
             <ENABLED>1</ENABLED>
             <NAMESERVER-DATABASE>
-              <RESOURCE-RECORD>
-                <TYPE>A-REC</TYPE>
-                <NAME>praktij.ac.id</NAME>
-                <TTL>86400</TTL>
-                <IPADDRESS>192.168.10.5</IPADDRESS>
-              </RESOURCE-RECORD>
-            </NAMESERVER-DATABASE>
+              <RESOURCE-RECORD><TYPE>A-REC</TYPE><NAME>www.testsite.com</NAME><TTL>86400</TTL><IPADDRESS>192.168.10.3</IPADDRESS></RESOURCE-RECORD></NAMESERVER-DATABASE>
           </DNS_SERVER>
           <NF_COLLECTOR>
             <ENABLED>0</ENABLED>
@@ -3269,10 +3263,10 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
                   <COVERAGERANGE>0</COVERAGERANGE>
                   <SAVED_FULLDUPLEX>false</SAVED_FULLDUPLEX>
                   <UP_METHOD>5</UP_METHOD>
-                  <IP>192.168.10.2</IP>
+                  <IP>192.168.10.4</IP>
                   <SUBNET>255.255.255.0</SUBNET>
                   <PORT_GATEWAY>192.168.10.1</PORT_GATEWAY>
-                  <PORT_DNS>192.168.10.3</PORT_DNS>
+                  <PORT_DNS>192.168.10.2</PORT_DNS>
                   <PORT_DHCP_ENABLE>false</PORT_DHCP_ENABLE>
                   <ND_SUPPRESSED>false</ND_SUPPRESSED>
                   <ND_IPV6_DNS_ADDRESSES />
@@ -3321,7 +3315,7 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
           <PTP_ENALBED>0</PTP_ENALBED>
           <GATEWAY>192.168.10.1</GATEWAY>
           <DNS_CLIENT>
-            <SERVER_IP>192.168.10.3</SERVER_IP>
+            <SERVER_IP>192.168.10.2</SERVER_IP>
             <SERVER_IPV6 />
           </DNS_CLIENT>
           <EMAIL_CLIENT>
@@ -4703,123 +4697,7 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
                 <DHCP_SERVER>
                   <ENABLED>1</ENABLED>
                   <POOLS>
-                    <POOL>
-                      <NAME>serverPool</NAME>
-                      <NETWORK>192.168.10.0</NETWORK>
-                      <MASK>255.255.255.0</MASK>
-                      <DEFAULT_ROUTER>192.168.10.1</DEFAULT_ROUTER>
-                      <TFTP_ADDRESS>0.0.0.0</TFTP_ADDRESS>
-                      <START_IP>192.168.10.2</START_IP>
-                      <END_IP>192.168.10.11</END_IP>
-                      <DNS_SERVER>192.168.10.3</DNS_SERVER>
-                      <MAX_USERS>10</MAX_USERS>
-                      <DOMAIN_NAME />
-                      <DHCP_POOL_LEASES>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>192.168.10.3</IP_ADDRESS>
-                          <MAC_ADDRESS>0060.3EAD.89B8</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0060.3EAD.89B8</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>192.168.10.4</IP_ADDRESS>
-                          <MAC_ADDRESS>000B.BEE9.D68A</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>000B.BEE9.D68A</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                      </DHCP_POOL_LEASES>
-                      <LEASE_TIME>86400000</LEASE_TIME>
-                      <WLC_ADDRESS>0.0.0.0</WLC_ADDRESS>
-                    </POOL>
-                    <POOL>
-                      <NAME>router</NAME>
-                      <NETWORK>95.0.0.0</NETWORK>
-                      <MASK>255.0.0.0</MASK>
-                      <DEFAULT_ROUTER>95.0.0.1</DEFAULT_ROUTER>
-                      <TFTP_ADDRESS>0.0.0.0</TFTP_ADDRESS>
-                      <START_IP>95.0.0.2</START_IP>
-                      <END_IP>95.0.0.11</END_IP>
-                      <DNS_SERVER>192.168.10.3</DNS_SERVER>
-                      <MAX_USERS>10</MAX_USERS>
-                      <DOMAIN_NAME />
-                      <DHCP_POOL_LEASES>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.2</IP_ADDRESS>
-                          <MAC_ADDRESS>0060.5CBC.126A</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0060.5CBC.126A</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.4</IP_ADDRESS>
-                          <MAC_ADDRESS>0001.6461.2BC7</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0001.6461.2BC7</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.3</IP_ADDRESS>
-                          <MAC_ADDRESS>0006.2A69.498E</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0006.2A69.498E</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.6</IP_ADDRESS>
-                          <MAC_ADDRESS>0060.3E64.26E7</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0060.3E64.26E7</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.7</IP_ADDRESS>
-                          <MAC_ADDRESS>0001.43E0.58DD</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0001.43E0.58DD</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.11</IP_ADDRESS>
-                          <MAC_ADDRESS>0001.9719.3505</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0001.9719.3505</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.8</IP_ADDRESS>
-                          <MAC_ADDRESS>0001.43C5.14B0</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0001.43C5.14B0</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.9</IP_ADDRESS>
-                          <MAC_ADDRESS>0006.2A73.4D3A</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0006.2A73.4D3A</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.10</IP_ADDRESS>
-                          <MAC_ADDRESS>00D0.BC14.01E4</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>00D0.BC14.01E4</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                        <DHCP_POOL_LEASE>
-                          <IP_ADDRESS>95.0.0.5</IP_ADDRESS>
-                          <MAC_ADDRESS>0060.7027.2222</MAC_ADDRESS>
-                          <HOST_PORT>FastEthernet0</HOST_PORT>
-                          <LEASE_TIME>86400000</LEASE_TIME>
-                          <CLIENT_ID>0060.7027.2222</CLIENT_ID>
-                        </DHCP_POOL_LEASE>
-                      </DHCP_POOL_LEASES>
-                      <LEASE_TIME>86400000</LEASE_TIME>
-                      <WLC_ADDRESS>0.0.0.0</WLC_ADDRESS>
-                    </POOL>
-                  </POOLS>
+                    <POOL><NAME>LAN-R0</NAME><NETWORK>192.168.10.0</NETWORK><MASK>255.255.255.0</MASK><DEFAULT_ROUTER>192.168.10.1</DEFAULT_ROUTER><TFTP_ADDRESS>0.0.0.0</TFTP_ADDRESS><START_IP>192.168.10.10</START_IP><END_IP>192.168.10.254</END_IP><DNS_SERVER>192.168.10.2</DNS_SERVER><MAX_USERS>245</MAX_USERS><DOMAIN_NAME /><DHCP_POOL_LEASES /></POOL><POOL><NAME>LAN-R1</NAME><NETWORK>192.168.20.0</NETWORK><MASK>255.255.255.0</MASK><DEFAULT_ROUTER>192.168.20.1</DEFAULT_ROUTER><TFTP_ADDRESS>0.0.0.0</TFTP_ADDRESS><START_IP>192.168.20.10</START_IP><END_IP>192.168.20.254</END_IP><DNS_SERVER>192.168.10.2</DNS_SERVER><MAX_USERS>245</MAX_USERS><DOMAIN_NAME /><DHCP_POOL_LEASES /></POOL><POOL><NAME>LAN-R2</NAME><NETWORK>192.168.30.0</NETWORK><MASK>255.255.255.0</MASK><DEFAULT_ROUTER>192.168.30.1</DEFAULT_ROUTER><TFTP_ADDRESS>0.0.0.0</TFTP_ADDRESS><START_IP>192.168.30.10</START_IP><END_IP>192.168.30.254</END_IP><DNS_SERVER>192.168.10.2</DNS_SERVER><MAX_USERS>245</MAX_USERS><DOMAIN_NAME /><DHCP_POOL_LEASES /></POOL></POOLS>
                   <DHCP_RESERVATIONS />
                   <AUTOCONFIG />
                 </DHCP_SERVER>
@@ -5121,66 +4999,31 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
             <LINE>no service timestamps debug datetime msec</LINE>
             <LINE>no service password-encryption</LINE>
             <LINE>!</LINE>
-            <LINE>hostname Router</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>hostname Router1</LINE>
             <LINE>!</LINE>
             <LINE>no ip cef</LINE>
             <LINE>no ipv6 cef</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>interface FastEthernet0/0</LINE>
-            <LINE> description Server LAN</LINE>
-            <LINE> ip address 192.168.10.1 255.255.255.0</LINE>
-            <LINE> ip helper-address 192.168.10.2</LINE>
+            <LINE> ip address 192.168.20.1 255.255.255.0</LINE>
+            <LINE> ip helper-address 192.168.10.4</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet1/0</LINE>
-            <LINE> description WAN to Router2</LINE>
-            <LINE> ip address 152.10.2.1 255.255.255.252</LINE>
-            <LINE> ip helper-address 192.168.10.2</LINE>
+            <LINE> ip address 172.16.0.2 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet2/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 10.0.2.1 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>ip classless</LINE>
-            <LINE>!</LINE>
-            <LINE>ip flow-export version 9</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>ip route 192.168.10.0 255.255.255.0 172.16.0.1</LINE>
+            <LINE>ip route 192.168.30.0 255.255.255.0 10.0.2.2</LINE>
+            <LINE>ip route 10.0.1.0 255.255.255.252 172.16.0.1</LINE>
             <LINE>!</LINE>
             <LINE>line con 0</LINE>
             <LINE>!</LINE>
@@ -5189,11 +5032,8 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
             <LINE>line vty 0 4</LINE>
             <LINE> login</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>end</LINE>
-          </RUNNINGCONFIG>
-          <STARTUPCONFIG>
+          </RUNNINGCONFIG><STARTUPCONFIG>
             <LINE>!</LINE>
             <LINE>version 12.2</LINE>
             <LINE>no service timestamps log datetime msec</LINE>
@@ -5637,66 +5477,31 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
             <LINE>no service timestamps debug datetime msec</LINE>
             <LINE>no service password-encryption</LINE>
             <LINE>!</LINE>
-            <LINE>hostname Router</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>hostname Router2</LINE>
             <LINE>!</LINE>
             <LINE>no ip cef</LINE>
             <LINE>no ipv6 cef</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>interface FastEthernet0/0</LINE>
-            <LINE> description Client LAN</LINE>
-            <LINE> ip address 95.0.0.1 255.0.0.0</LINE>
-            <LINE> ip helper-address 192.168.10.2</LINE>
+            <LINE> ip address 192.168.30.1 255.255.255.0</LINE>
+            <LINE> ip helper-address 192.168.10.4</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet1/0</LINE>
-            <LINE> description WAN to Router1</LINE>
-            <LINE> ip address 152.10.2.2 255.255.255.252</LINE>
-            <LINE> ip helper-address 192.168.10.2</LINE>
+            <LINE> ip address 10.0.1.2 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet2/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 10.0.2.2 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
             <LINE>!</LINE>
             <LINE>ip classless</LINE>
-            <LINE>!</LINE>
-            <LINE>ip flow-export version 9</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>ip route 192.168.10.0 255.255.255.0 10.0.1.1</LINE>
+            <LINE>ip route 192.168.20.0 255.255.255.0 10.0.2.1</LINE>
+            <LINE>ip route 172.16.0.0 255.255.255.252 10.0.1.1</LINE>
             <LINE>!</LINE>
             <LINE>line con 0</LINE>
             <LINE>!</LINE>
@@ -5705,11 +5510,8 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
             <LINE>line vty 0 4</LINE>
             <LINE> login</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>end</LINE>
-          </RUNNINGCONFIG>
-          <STARTUPCONFIG>
+          </RUNNINGCONFIG><STARTUPCONFIG>
             <LINE>!</LINE>
             <LINE>version 12.2</LINE>
             <LINE>no service timestamps log datetime msec</LINE>
@@ -10942,67 +10744,30 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
             <LINE>no service timestamps debug datetime msec</LINE>
             <LINE>no service password-encryption</LINE>
             <LINE>!</LINE>
-            <LINE>hostname Router</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>hostname Router0</LINE>
             <LINE>!</LINE>
             <LINE>no ip cef</LINE>
             <LINE>no ipv6 cef</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>interface FastEthernet0/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 192.168.10.1 255.255.255.0</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
-            <LINE> shutdown</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet1/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 172.16.0.1 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
-            <LINE> shutdown</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet2/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 10.0.1.1 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
-            <LINE> shutdown</LINE>
-            <LINE>!</LINE>
-            <LINE>router rip</LINE>
             <LINE>!</LINE>
             <LINE>ip classless</LINE>
-            <LINE>!</LINE>
-            <LINE>ip flow-export version 9</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>ip route 192.168.20.0 255.255.255.0 172.16.0.2</LINE>
+            <LINE>ip route 192.168.30.0 255.255.255.0 10.0.1.2</LINE>
+            <LINE>ip route 10.0.2.0 255.255.255.252 172.16.0.2</LINE>
             <LINE>!</LINE>
             <LINE>line con 0</LINE>
             <LINE>!</LINE>
@@ -11011,11 +10776,8 @@ Password: &lt;input type="password" name="pw" id="pw" value="" size="20"&gt;&lt;
             <LINE>line vty 0 4</LINE>
             <LINE> login</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>end</LINE>
-          </RUNNINGCONFIG>
-          <STARTUPCONFIG />
+          </RUNNINGCONFIG><STARTUPCONFIG />
           <CURRENT_COMMAND_SET>pt_12.2</CURRENT_COMMAND_SET>
           <FILE_MANAGER>
             <FILE class="CDirectory">
