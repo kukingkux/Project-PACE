@@ -5,67 +5,31 @@
             <LINE>no service timestamps debug datetime msec</LINE>
             <LINE>no service password-encryption</LINE>
             <LINE>!</LINE>
-            <LINE>hostname Router</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>hostname Router2</LINE>
             <LINE>!</LINE>
             <LINE>no ip cef</LINE>
             <LINE>no ipv6 cef</LINE>
             <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>interface FastEthernet0/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 192.168.30.1 255.255.255.0</LINE>
+            <LINE> ip helper-address 192.168.10.4</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
-            <LINE> shutdown</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet1/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 10.0.1.2 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
-            <LINE> shutdown</LINE>
             <LINE>!</LINE>
             <LINE>interface FastEthernet2/0</LINE>
-            <LINE> no ip address</LINE>
+            <LINE> ip address 10.0.2.2 255.255.255.252</LINE>
             <LINE> duplex auto</LINE>
             <LINE> speed auto</LINE>
-            <LINE> shutdown</LINE>
-            <LINE>!</LINE>
-            <LINE>router rip</LINE>
             <LINE>!</LINE>
             <LINE>ip classless</LINE>
-            <LINE>!</LINE>
-            <LINE>ip flow-export version 9</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
+            <LINE>ip route 192.168.10.0 255.255.255.0 10.0.1.1</LINE>
+            <LINE>ip route 192.168.20.0 255.255.255.0 10.0.2.1</LINE>
+            <LINE>ip route 172.16.0.0 255.255.255.252 10.0.1.1</LINE>
             <LINE>!</LINE>
             <LINE>line con 0</LINE>
             <LINE>!</LINE>
@@ -73,8 +37,6 @@
             <LINE>!</LINE>
             <LINE>line vty 0 4</LINE>
             <LINE> login</LINE>
-            <LINE>!</LINE>
-            <LINE>!</LINE>
             <LINE>!</LINE>
             <LINE>end</LINE>
           </RUNNINGCONFIG>
