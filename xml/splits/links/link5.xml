@@ -1,0 +1,18 @@
+<LINK>
+        <TYPE>eCopper</TYPE>
+        <CABLE>
+          <LENGTH>1</LENGTH>
+          <FUNCTIONAL>true</FUNCTIONAL>
+          <FROM>save-ref-id:12367245997498874028</FROM>
+          <PORT>FastEthernet0/0</PORT>
+          <TO>save-ref-id:2108298739012384999</TO>
+          <PORT>FastEthernet0/1</PORT>
+          <FROM_DEVICE_MEM_ADDR>1797009467024</FROM_DEVICE_MEM_ADDR>
+          <TO_DEVICE_MEM_ADDR>1797113646544</TO_DEVICE_MEM_ADDR>
+          <FROM_PORT_MEM_ADDR>1797014114024</FROM_PORT_MEM_ADDR>
+          <TO_PORT_MEM_ADDR>1797122101672</TO_PORT_MEM_ADDR>
+          <GEO_VIEW_COLOR>#6ba72e</GEO_VIEW_COLOR>
+          <IS_MANAGED_IN_RACK_VIEW>false</IS_MANAGED_IN_RACK_VIEW>
+          <TYPE>eStraightThrough</TYPE>
+        </CABLE>
+      </LINK>
